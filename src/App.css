@@ -4,27 +4,14 @@ body {
   margin: 0px;
 }
 
-/* fix android chromium search bar causing vh change when scrolling */
-@media only screen and (max-width: 600px) {
-  body {
-    position: absolute;
-    top: 0.5px;
-    left: 0;
-    right: 0;
-    bottom: 0.5px;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-}
-
 .text {
   color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 2.5dvh;
   text-align: center;
 
-  height: 100vh;
+  height: 100dvh;
   width: 40%;
 
   display: flex;
@@ -69,7 +56,7 @@ a {
 }
 
 .background-image {
-  height: 100vh;
+  height: 100dvh;
   background-size: cover;
   background-attachment: fixed;
   filter: saturate(70%);
@@ -77,14 +64,14 @@ a {
 
 @media screen and (max-width: 1000px) {
   .text {
-    font-size: 2vh;
+    font-size: 2dvh;
     width: 55%;
   }
 }
 
 @media screen and (max-width: 500px) {
   .text {
-    font-size: 1.7vh;
+    font-size: 1.7dvh;
     width: 70%;
   }
 }
